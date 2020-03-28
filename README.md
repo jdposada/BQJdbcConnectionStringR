@@ -27,8 +27,7 @@ bqDriverPath <- "/Users/jdposada/BqJdbcDrivers"
 connectionString <-  createBQConnectionString(projectId = "som-rit-starr",
                                               defaultDataset = "jdposada_explore",
                                               authType = 2,
-                                              jsonCredentialsPath = jsonPath,
-                                              bqDriverPath = bqDriverPath)
+                                              jsonCredentialsPath = jsonPath)
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms="bigquery",
                                                                 connectionString=connectionString,
