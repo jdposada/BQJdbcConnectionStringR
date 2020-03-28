@@ -47,7 +47,7 @@ createBQConnectionString <- function(projectId='',
   defaultDataset <- paste0("DefaultDataset=", defaultDataset)
 
   if (authType == 2){
-    credentials <- fromJSON(json_path)
+    credentials <- fromJSON(jsonCredentialsPath)
     clientId <- paste0("OAuthClientId=", credentials$client_id)
     refreshToken <- paste0("OAuthRefreshToken=", credentials$client_secret)
     clientSecret <- paste0("OAuthClientSecret=", credentials$refresh_token)
