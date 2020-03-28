@@ -4,3 +4,4 @@ Title: This package helps build the connection string required to use OHDSI [Dat
 Version: 0.1
 Date: 2020-03-28
 Author: Jose Posada
+RoxygenNote: 6.1.1
