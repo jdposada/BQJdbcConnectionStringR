@@ -1,0 +1,6 @@
+Package: BQJdbcConnectionStringR
+Type: Package
+Title: This package helps build the connection string required to use OHDSI [DatabaseConnector]
+Version: 0.1
+Date: 2020-03-28
+Author: Jose Posada
