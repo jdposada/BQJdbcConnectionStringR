@@ -49,8 +49,8 @@ createBQConnectionString <- function(projectId='',
   if (authType == 2){
     credentials <- jsonlite::fromJSON(jsonCredentialsPath)
     clientId <- paste0("OAuthClientId=", credentials$client_id)
-    refreshToken <- paste0("OAuthRefreshToken=", credentials$client_secret)
-    clientSecret <- paste0("OAuthClientSecret=", credentials$refresh_token)
+    refreshToken <- paste0("OAuthRefreshToken=", credentials$refresh_token)
+    clientSecret <- paste0("OAuthClientSecret=", credentials$client_secret)
     keyPath <- ''
     accountEmail <- ''
   }
