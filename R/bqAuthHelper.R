@@ -108,7 +108,8 @@ createBQConnectionString <- function(projectId='',
                             proxyHost,
                             proxyPort,
                             proxyUser,
-                            proxyPwd
+                            proxyPwd,
+                            "EnableSession=1"
                             ), collapse=";")
 
   connectionString <- gsub(pattern = ';{2,}', replacement = ';', connectionString)
